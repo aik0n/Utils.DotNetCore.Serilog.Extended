@@ -9,8 +9,8 @@ namespace SerilogExtendedConsoleExample
     {
         public static async Task Main(string[] args)
         {
-            // add this line of code to enable serilog selflog
-            // it is usefull to check serilog.json configuration error(s)
+            // add this line of code to enable Serilog self log
+            // it is useful to check serilog.json configuration error(s)
             // this line should before any methods/hosts run
             // use your file path from settings or configuration
             LoggerDebug.Enable("c:/w.o.r.k/serilog_console_sample_debug.txt");

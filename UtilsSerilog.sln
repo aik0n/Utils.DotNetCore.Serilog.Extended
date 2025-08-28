@@ -5,11 +5,11 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils.DotNetCore.Serilog.Extended", "SerilogExtended\Utils.DotNetCore.Serilog.Extended.csproj", "{4B8624D1-C24A-4084-9D6B-3F891780F9F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedWebExample", "SerilogExtendedWebExample\SerilogExtendedWebExample.csproj", "{C0FBF23C-7BDB-4837-8831-08BB4C8DBE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_WebExample", "SerilogExtended_WebExample\SerilogExtended_WebExample.csproj", "{C0FBF23C-7BDB-4837-8831-08BB4C8DBE2D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedConsoleExample", "SerilogExtendedConsoleExample\SerilogExtendedConsoleExample.csproj", "{6BA1EAA5-524F-459B-B940-6E5A00945882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_ConsoleExample", "SerilogExtended_ConsoleExample\SerilogExtended_ConsoleExample.csproj", "{6BA1EAA5-524F-459B-B940-6E5A00945882}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedConsoleExample.UnitTests", "SerilogExtendedConsoleExample.UnitTests\SerilogExtendedConsoleExample.UnitTests.csproj", "{F5F4503F-BEC5-4841-89EF-5861AC0724D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_ConsoleExample.UnitTests", "SerilogExtended_ConsoleExample.UnitTests\SerilogExtended_ConsoleExample.UnitTests.csproj", "{F5F4503F-BEC5-4841-89EF-5861AC0724D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

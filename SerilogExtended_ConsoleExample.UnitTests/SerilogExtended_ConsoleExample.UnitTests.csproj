@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SerilogExtendedConsoleExample\SerilogExtendedConsoleExample.csproj" />
+    <ProjectReference Include="..\SerilogExtended_ConsoleExample\SerilogExtended_ConsoleExample.csproj" />
   </ItemGroup>
 
   <ItemGroup>
