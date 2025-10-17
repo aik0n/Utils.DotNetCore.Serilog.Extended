@@ -1,0 +1,27 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.EventLog", "Serilog.Sinks.Console" ],
+    "MinimumLevel": "Verbose",
+    "WriteTo": [
+      {
+        "Name": "EventLog",
+        "Args": {
+          "source": "Sample.Windows.Service",
+          "logName": "Application",
+          "restrictedToMinimumLevel": "Information",
+          "manageEventSource": true
+        }
+      },
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}"
+        }
+      }
+    ],
+    "Enrich": [ "FromLogContext" ],
+    "Properties": {
+      "Application": "Sample.Windows.Service"
+    }
+  }
+}
