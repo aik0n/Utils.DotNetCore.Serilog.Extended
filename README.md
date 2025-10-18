@@ -10,6 +10,7 @@ Supports (out of a box):
 5. Extension methods to log with context
 6. Integration with .NET Core dependency injection
 7. Logger setup using configuration (settings file)
+8. Windows Event Log Supported
 
 
 ## How to use
@@ -246,6 +247,43 @@ A caller class name, method name and line number will be added to log output:
 Test exception message using context (at LogController.ExceptionWithContext, line 75)
 System.DivideByZeroException: Attempted to divide by zero.
    at SerilogExtendedWebExample.Controllers.LogController.ExceptionWithContext()
+```
+
+## Windows Event Log
+IMPORTANT Note. Your application should be run with administrator privilege. Or, another option, you should to create a ```source``` in Windows log (samples below)  
+```json
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.EventLog", "Serilog.Sinks.Console" ],
+    "MinimumLevel": "Verbose",
+    "WriteTo": [
+      {
+        "Name": "EventLog",
+        "Args": {
+          "source": "Sample.Windows.Service",
+          "logName": "Application",
+          "restrictedToMinimumLevel": "Information",
+          "manageEventSource": true
+        }
+      },
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}"
+        }
+      }
+    ],
+    "Enrich": [ "FromLogContext" ],
+    "Properties": {
+      "Application": "Sample.Windows.Service"
+    }
+  }
+}
+```
+Power Shell examples to create/delete Event Log Source. Should be done before application/service started if you don't use run application in privilege mode.
+```shell
+New-EventLog -LogName Application -Source "Sample.Windows.Service"
+Remove-EventLog -Source "Sample.Windows.Service"
 ```
 
 ## Useful link(s)

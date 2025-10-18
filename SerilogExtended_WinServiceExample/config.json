@@ -1,0 +1,8 @@
+{
+  "Settings": {
+    "SerilogDebugPath": "./logs/serilog_debug.log",
+    "ApplicationInstanceGuid": "3A371B19-E3C8-4BC9-BDD7-DE11176B4759",
+    "HostPort": 5555,
+    "LogMessagesIntervalSeconds": 16
+  }
+}

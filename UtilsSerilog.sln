@@ -5,11 +5,13 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils.DotNetCore.Serilog.Extended", "SerilogExtended\Utils.DotNetCore.Serilog.Extended.csproj", "{4B8624D1-C24A-4084-9D6B-3F891780F9F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedWebExample", "SerilogExtendedWebExample\SerilogExtendedWebExample.csproj", "{C0FBF23C-7BDB-4837-8831-08BB4C8DBE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_WebExample", "SerilogExtended_WebExample\SerilogExtended_WebExample.csproj", "{C0FBF23C-7BDB-4837-8831-08BB4C8DBE2D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedConsoleExample", "SerilogExtendedConsoleExample\SerilogExtendedConsoleExample.csproj", "{6BA1EAA5-524F-459B-B940-6E5A00945882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_ConsoleExample", "SerilogExtended_ConsoleExample\SerilogExtended_ConsoleExample.csproj", "{6BA1EAA5-524F-459B-B940-6E5A00945882}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtendedConsoleExample.UnitTests", "SerilogExtendedConsoleExample.UnitTests\SerilogExtendedConsoleExample.UnitTests.csproj", "{F5F4503F-BEC5-4841-89EF-5861AC0724D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogExtended_ConsoleExample.UnitTests", "SerilogExtended_ConsoleExample.UnitTests\SerilogExtended_ConsoleExample.UnitTests.csproj", "{F5F4503F-BEC5-4841-89EF-5861AC0724D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogExtended_WinServiceExample", "SerilogExtended_WinServiceExample\SerilogExtended_WinServiceExample.csproj", "{07568424-C066-410F-8E6C-137916AD2C4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F5F4503F-BEC5-4841-89EF-5861AC0724D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F4503F-BEC5-4841-89EF-5861AC0724D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F4503F-BEC5-4841-89EF-5861AC0724D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07568424-C066-410F-8E6C-137916AD2C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07568424-C066-410F-8E6C-137916AD2C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07568424-C066-410F-8E6C-137916AD2C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07568424-C066-410F-8E6C-137916AD2C4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
