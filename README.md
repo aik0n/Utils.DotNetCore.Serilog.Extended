@@ -1,3 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/license-MIT-FFD700.svg?style=flat)](https://opensource.org/licenses/MIT)
+![Tag](https://img.shields.io/github/v/tag/aik0n/Utils.DotNetCore.Serilog.Extended?label=version&style=flat&color=090&sort=semver)
+![Repo Size](https://img.shields.io/github/repo-size/aik0n/Utils.DotNetCore.Serilog.Extended?style=flat&color=036)
+![Stars](https://img.shields.io/github/stars/aik0n/Utils.DotNetCore.Serilog.Extended?style=flat&color=DAA520)
+
 ## About
 A simple library to make Serilog integration to .NET projects a bit easier.
 
@@ -289,3 +294,7 @@ Remove-EventLog -Source "Sample.Windows.Service"
 ## Useful link(s)
 - [Serilog Wiki](https://github.com/serilog/serilog/wiki)
 - [Best Practices](https://benfoster.io/blog/serilog-best-practices/)
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE)
